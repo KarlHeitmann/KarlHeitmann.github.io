@@ -1,0 +1,64 @@
+- name: Diio
+  role: Fullstack Ruby on Rails developer
+  period: 02/2024 - Today
+  place: Chile (remote)
+  bullet_list:
+    - Worked in a team of 4 software engineers utilizing agile scrum methodologies, following TDD.
+    - Implemented asynchronous features using Sidekiq.
+    - Fixed bugs & built features in backend Ruby on Rails application and React frontend.
+    - Integrated Microsoft Graph API to scrape user calendar data.
+    - Integrated OpenAI API to send prompts to LLM and display answers to our users.
+    - Worked along with a Redis expert, to solve race condition problems and improve caching in Rails.
+- name: Jobsity
+  role: Fullstack developer Ruby on Rails (contractor)
+  period: 06/2022 - 01/2024
+  place: US (remote)
+  bullet_list:
+    - Fullstack Ruby on Rails contractor.
+    - Worked in integrating external services into the core suit of products.
+    - Upgraded all rails feature flags from version 5.0 to version 7.0.
+    - Optimized slow web pages by fixing bad usage of ActiveRecord Query interface, reduced number of object allocations and implemented UJS to load fragments of the application on demand.
+    - Reduced memory ram consumption to ~50%, saved money on the applications hosted in Heroku.
+    - Developed features for core suite products.
+- name: Políglota SpA
+  role: Fullstack Ruby on Rails developer
+  period: 08/2021 - 05/2022 
+  place: Chile
+  bullet_list:
+    - Fixed bugs reported via Zendesk.
+    - Optimized slow web pages by replacing fragments of a monolith rails application by UJS, making the web app faster and letting the user load what they need on demand.
+    - Worked in a team of 4 software engineers utilizing agile scrum methodology.
+    - Developed features for core suite of products.
+    - Built new features in Vue.js frontend.
+
+- name: Workana & Poliglota
+  role: Freelancer and lecturer (contractor)
+  period: 01/2020 - 07/2021
+  place: South America (remote)
+  bullet_list:
+    - Taught at a bootcamp about Ruby on Rails in "Academia Desafío Latam".
+    - Worked as freelancer in small projects posted at "Workana" (a website similar to Upwork in LATAM).
+    - Fixed WordPress plugins.
+    - Developed a Gutenberg plugin for WordPress.
+    - Built web scrapers using Beautiful Soup and Selenium Web Browser (python).
+    - Fixed bugs in web services.
+
+- name: Ocular Security SpA
+  role: Fullstack web development & mobile development
+  period: 01/2019 - 12/2019
+  place: Chile
+  bullet_list:
+    - Built an MVP Ruby on Rails monolithic web application.
+    - Built an MVP mobile application in React Native.
+
+
+- name: Resed SpA
+  role: Web designer and Web Developer
+  period: 01/2014 - 01/2018 
+  place: Chile
+  bullet_list:
+    - Built MVP & web applications monolithic applications for projects requested by customers in IoT sector.
+    - Followed MVC design pattern.
+    - Built REST API for mobile apps.
+    - Used Bootstrap to build responsive web apps.
+

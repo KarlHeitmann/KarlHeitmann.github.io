@@ -1,18 +1,19 @@
-# Education
+<!-- # Education -->
+<!-- <h1 id="education">Education</h1> -->
 
-Electronic engineering, major in Computer Science and minor in Physics.
-
-Universidad Técnica Federico Santa María
-
-01/2007 - 01/2016 | Valparaíso, Chile
-
----
-
-Elementary and High School French Alliance
-
-Lycée Jean d'Alembert
-1994 - 2006 | Valparaíso, Chile
-
-Obtained a B2 french diploma.
-
+<div class="nodes">
+  <!--<h3><i class="fa fa-briefcase"></i>Education</h3>-->
+  <ul class="first-level">
+    {% for education in site.data.educations %}
+      <li>
+        <span>{{ education.name }}</span>
+        <small>{{ education.institution }}</small>
+        <small>{{ education.place }} - {{ education.period }}</small>
+        {% if education.extra %}
+          <small>{{ education.extra }}</small>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
 
