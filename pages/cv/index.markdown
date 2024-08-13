@@ -4,6 +4,8 @@
 
 # layout: page
 layout: home
+# layout: base
+# layout: post
 permalink: /cv/
 ---
 
@@ -19,32 +21,12 @@ applications and agile methodologies.
 
 {% include_relative education.markdown %}
 
-{% include_relative experience.markdown %}
+{% include_relative skills.html %}
 
-# Skills:
-- Ruby on Rails
-- React.js
-- Node.js
-- RSpec
-- React hooks
-- Functional programming
-- OOP
-- JavaScript
-- Rust
-
-# Languages
-
-- Spanish
-- Native
-- Portuguese
-- Native
-- English
-- Proficient
-- French
-- Proficient
-- German
-- Beginner
+{% include_relative languages.html %}
 
 {% include_relative experience.markdown %}
+
+{% include_relative open_source_collaboration.markdown %}
 
 {% include_relative projects.markdown %}

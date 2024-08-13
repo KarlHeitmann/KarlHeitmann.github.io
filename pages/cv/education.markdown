@@ -1,6 +1,8 @@
 <!-- # Education -->
 <!-- <h1 id="education">Education</h1> -->
 
+<h3 class="cv-subtitle">Education</h3>
+
 <div class="nodes">
   <!--<h3><i class="fa fa-briefcase"></i>Education</h3>-->
   <ul class="first-level">

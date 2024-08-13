@@ -1,4 +1,4 @@
-# Experience
+<!-- <h1 id="experience">Experience</h1> -->
 
 <div class="nodes">
   <ul class="first-level">
@@ -8,7 +8,7 @@
         <small>{{ experience.role }}</small>
         <small>{{ experience.period }}</small>
         <small>{{ experience.place }}</small>
-        <ul>
+        <ul class="second-level">
           {% for bullet_item in experience.bullet_list %}
             <li><small>{{ bullet_item }}</small></li>
           {% endfor %}
