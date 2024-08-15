@@ -1,0 +1,9 @@
+<!--<h1 id="projects">Projects</h1>-->
+<h3 id="projects">Projects</h3>
+
+<div class="projects">
+  {% for project in site.data.projects %}
+    {% include_relative project.html %}
+  {% endfor %}
+</div>
+

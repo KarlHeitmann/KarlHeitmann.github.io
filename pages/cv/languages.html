@@ -1,0 +1,83 @@
+<!--
+# Languages
+-->
+
+<table class="table-languages">
+  <thead>
+    <tr>
+      <!--<th>Language</th>-->
+      <th></th>
+      <th>A1</th>
+      <th>A2</th>
+      <th>B1</th>
+      <th>B2</th>
+      <th>C</th>
+      <th>NATIVE</th>
+    </tr>
+    {% for language in site.data.languages %}
+      <tr>
+        <td class="language-init">{{ language.name }}</td>
+        {% if language.level == 'A2' or language.level == 'B1' or language.level == 'B2'  or language.level == 'C' or language.is_native %}
+          <td class="filled"><span>.</span></td>
+        {% elsif language.level == 'A1' %}
+          <td class="reached"><span>.</span></td>
+        {% else %}
+          <td class="unfilled"></td>
+        {% endif %}
+        {% if language.level == 'B1' or language.level == 'B2'  or language.level == 'C' or language.is_native %}
+          <td class="filled"><span>.</span></td>
+        {% elsif language.level == 'A2' %}
+          <td class="reached"><span>.</span></td>
+        {% else %}
+          <td class="unfilled"></td>
+        {% endif %}
+        {% if language.level == 'B2'  or language.level == 'C' or language.is_native %}
+          <td class="filled"><span>.</span></td>
+        {% elsif language.level == 'B1' %}
+          <td class="reached"><span>.</span></td>
+        {% else %}
+          <td class="unfilled"></td>
+        {% endif %}
+        {% if language.level == 'C' or language.is_native %}
+          <td class="filled"><span>.</span></td>
+        {% elsif language.level == 'B2' %}
+          <td class="reached"><span>.</span></td>
+        {% else %}
+          <td class="unfilled"></td>
+        {% endif %}
+        {% if language.is_native %}
+          <td class="filled"><span>.</span></td>
+        {% elsif language.level == 'C' %}
+          <td class="reached"><span>.</span></td>
+        {% else %}
+          <td class="unfilled"></td>
+        {% endif %}
+        {% if language.is_native %}
+          <td class="reached"><span>.</span></td>
+        {% else %}
+          <td class="unfilled"></td>
+        {% endif %}
+      </tr>
+    {% endfor %}
+  </thead>
+</table>
+
+<!--
+<ul class="languages">
+  <li>
+    Spanish: Native
+  </li>
+  <li>
+    Portuguese: Native
+  </li>
+  <li>
+    English: Proficient
+  </li>
+  <li>
+    French: Proficient
+  </li>
+  <li>
+    German: Beginner
+  </li>
+</ul>
+-->

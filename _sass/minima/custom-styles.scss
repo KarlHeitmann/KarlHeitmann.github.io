@@ -1,0 +1,136 @@
+$darkest-blue: #1a237e;
+$darker-blue: #283593;
+// $medium-blue: #3949ab;
+// $light-blue: #3f51b5;
+// $lighter-blue: #5c6bc0;
+// $lightest-blue: #9fa8da;
+$white: #ffffff;
+$black: #0e1442;
+$orange: #ffb300; // TODO: This is being used
+// $yellow: #fdd835; // TODO: Change this value depending on light or dark theme
+$yellow: $brand-color-dark;
+// $yellow: white;
+
+.cv-subtitle {
+  text-align: center;
+}
+
+@import "minima/table-languages";
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+@keyframes my_circle {
+  from {
+    box-shadow: 0 0 0 0px $yellow;
+  }
+  to {
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+  }
+}
+
+.project {
+  border: 1px solid;
+  border-radius: 6px;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.pr {
+  border: 1px solid;
+  border-radius: 6px;
+  margin: 1rem 0;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+
+  &-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &-logo-name {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  /*
+  img.icon {
+    align-self: end;
+  }
+  */
+}
+
+li.pr {
+  &--merged {
+    list-style-image: url(/assets/img/merged.svg);
+  }
+
+  &--unknown {
+    list-style: none;
+  }
+}
+
+img.language-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 0.2rem;
+
+}
+
+img.cv-profile-picture {
+  border-radius: 50%;
+  max-width: 15rem;
+}
+
+img.icon {
+  // height: 32px;
+  height: 24px;
+  // height: 20px;
+
+  // height: 144px;
+}
+
+.main-container-with-sidebar {
+  display: flex;
+  & > div {
+    padding: 0rem 2rem;
+    // flex-grow: 1;
+    width: calc(100% / 3);
+  }
+  & .sidebar-left-content > div {
+    // margin: 2rem 0rem;
+    margin: 1rem 0rem;
+  }
+  /*
+  max-width: calc(#{$content-width} - (#{$spacing-unit}));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit * .5;
+  padding-left: $spacing-unit * .5;
+  @extend %clearfix;
+
+  @media screen and (min-width: $on-large) {
+    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+  }
+  */
+}
+
+
+
+
+@import "minima/nodes";
+@import "minima/skills";
+

@@ -1,0 +1,27 @@
+- title: Fractal code refactoring example using Poke API backend (Vue.js)
+  description:
+    "Big components using composition API can be broken down into multiple components following a fractal refactoring approach. You can find a detailed explanation in the YouTube video and my blog entry linked below.
+    Explanation: "
+  demo: https://karlheitmann.github.io/estudios/fractal_refactorization_methodology.html
+  youtube: https://www.youtube.com/watch?v=gf_kUAyzptg
+  code: https://github.com/KarlHeitmann/fractal_refactorization_example
+
+- title: Git explorer (rust)
+  description: TUI to explore commits of a git repository
+  code: https://github.com/KarlHeitmann/git_explorer
+
+- title: Rg explorer (rust)
+  description: TUI wrapper for ripgrep.
+  code: https://github.com/KarlHeitmann/rg_explorer
+
+- title: Rails explorer (rust)
+  description: TUI to explore a rails project. Parses "rails routes" (done), logs (WIP) and models callback (WIP).
+  code: https://github.com/KarlHeitmann/rails_explorer
+
+- title: Fractal Figures (Vue.js)
+  description:
+    "A web component written in Vue.JS and deployed on my personal web page on github:"
+  demo: https://karlheitmann.github.io/estudios/fractal.html
+  code: https://github.com/KarlHeitmann/fractal_figures
+
+

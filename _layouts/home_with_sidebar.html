@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <!--<div class="wrapper">--> <!-- <<<<<<<<<<<<<<<<<<<< wrapper es el culpable!!!!!!!! -->
+      <!--<div class="wrapperrrrrr">-->
+      <div class="main-container-with-sidebar">
+        <div class="sidebar-left-content">
+          <div style="display: flex; justify-content: center;">
+            <img
+              class="cv-profile-picture"
+              src="/assets/img/yo.jpeg"
+            >
+          </div>
+
+          <div>
+            {% assign cv = site.data.cv %}
+            {{ cv.summary }}
+          </div>
+
+          {% include_relative skills.html %}
+
+          {% include_relative languages.html %}
+        </div>
+        <div class="main-content">
+          {%- if page.title -%}
+            <h1 class="page-heading">{{ page.title }}</h1>
+          {%- endif -%}
+
+          {% include_relative education.markdown %}
+
+          {% include_relative experience.markdown %}
+
+          {{ content }}
+        </div>
+        <div class="sidebar-right">
+          {% include_relative open_source_collaboration.html %}
+
+          {% include_relative projects.html %}
+        </div>
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
+
+
+

@@ -1,0 +1,17 @@
+- name: Spanish
+  level: Native
+  is_native: true
+- name: Portuguese
+  level: Native
+  is_native: true
+- name: English
+  # level: Proficient
+  level: B2
+  is_native: false
+- name: French
+  level: B2
+  is_native: false
+- name: German
+  level: A1
+  is_native: false
+
