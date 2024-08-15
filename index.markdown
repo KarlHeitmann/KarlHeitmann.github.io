@@ -9,12 +9,7 @@ layout: home
 
 <!--## Versatile fullstack web developer, specialized in Ruby on Rails.-->
 
-Self-taught and versatile software developer, specialized
-in Ruby on Rails and passionate about testing with RSpec.
-Strong JavaScript and Node.js skills.
 
-Experienced in TDD, integrating external APIs, optimizing
-applications and agile methodologies
 
 [CV]({% link pages/cv/index.markdown %})
 
