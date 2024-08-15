@@ -79,6 +79,20 @@ li.pr {
   }
 }
 
+img.language-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 0.2rem;
+
+}
+
+img.cv-profile-picture {
+  border-radius: 50%;
+  max-width: 15rem;
+}
+
 img.icon {
   // height: 32px;
   height: 24px;
@@ -86,6 +100,36 @@ img.icon {
 
   // height: 144px;
 }
+
+.main-container-with-sidebar {
+  display: flex;
+  & > div {
+    padding: 0rem 2rem;
+    // flex-grow: 1;
+    width: calc(100% / 3);
+  }
+  & .sidebar-left-content > div {
+    // margin: 2rem 0rem;
+    margin: 1rem 0rem;
+  }
+  /*
+  max-width: calc(#{$content-width} - (#{$spacing-unit}));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit * .5;
+  padding-left: $spacing-unit * .5;
+  @extend %clearfix;
+
+  @media screen and (min-width: $on-large) {
+    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+  }
+  */
+}
+
+
+
 
 @import "minima/nodes";
 @import "minima/skills";
