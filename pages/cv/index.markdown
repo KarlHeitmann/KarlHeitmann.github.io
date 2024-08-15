@@ -27,6 +27,6 @@ applications and agile methodologies.
 
 {% include_relative experience.markdown %}
 
-{% include_relative open_source_collaboration.markdown %}
+{% include_relative open_source_collaboration.html %}
 
 {% include_relative projects.markdown %}

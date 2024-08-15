@@ -1,0 +1,67 @@
+- repo_name: rspec-support
+  repo_home: https://github.com/rspec/rspec-support
+  status: merged
+  language: ruby
+  description: Fixes diff output when fuzzy finder "anything" is used in a Hash object
+  url: https://github.com/rspec/rspec-support/pull/599
+
+- repo_name: Railsdevs
+  repo_home: https://github.com/joemasilotti/railsdevs.com
+  status: merged
+  language: ruby_on_rails
+  description: "Feature: component Impersonate for en admin impersonate component."
+  url: https://github.com/joemasilotti/railsdevs.com/pull/627
+
+- repo_name: Octobox
+  repo_home: https://github.com/octobox/octobox
+  status: merged 
+  language: ruby_on_rails
+  description: Fix issue "toggling stars results in incorrect star icon until page refreshes issue".
+  url: https://github.com/octobox/octobox/pull/3111
+
+- repo_name: Asciigraph
+  repo_home: https://github.com/guptarohit/asciigraph
+  status: merged
+  language: golang
+  description: "Feat: changes .Plot call on main.go to .PlotMany."
+  url: https://github.com/guptarohit/asciigraph/pull/43
+
+- repo_name: git-igitt
+  repo_home: https://github.com/mlange-42/git-igitt
+  status: merged
+  language: rust
+  description: Add panic hook so if the app panics the terminal won't become a mess.
+  url: https://github.com/mlange-42/git-igitt/pull/60
+
+- repo_name: JsonCrack.com
+  repo_home: https://github.com/AykutSarac/jsoncrack.com
+  status: merged
+  language: react
+  description: "Bug fix: adds null safe operator to patch home error."
+  url: https://github.com/AykutSarac/jsoncrack.com/pull/85
+
+# TODO: Add proposal for JsonCrack.com
+# TODO: Add rating for PR
+# TODO: Add link to repo source code in each title, and write only "PR #xxx" in the PR card body
+
+- repo_name: Solargraph Rails plugin
+  repo_home: https://github.com/iftheshoefritz/solargraph-rails
+  status: merged
+  language: ruby
+  description: Added support to :float field on model annotations.
+  url: https://github.com/iftheshoefritz/solargraph-rails/pull/27
+
+- repo_name: Refined GitHub
+  repo_home: https://github.com/refined-github/refined-github
+  status: merged
+  language: node.js
+  description: Adds extend-discussion-status-filters feature.
+  url: https://github.com/refined-github/refined-github/pull/2745
+
+- repo_name: Faker
+  repo_home: https://github.com/faker-ruby/faker
+  status: merged
+  language: ruby
+  description: Adds ChileRut.full_formatted_rut generator to faker.
+  url: https://github.com/faker-ruby/faker/pull/2460
+

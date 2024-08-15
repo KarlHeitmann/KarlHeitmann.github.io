@@ -1,0 +1,47 @@
+{% if pr.status == 'merged' %}
+  {% assign merged_icon = '/assets/img/merged.svg' %}
+{% else %}
+  {% assign merged_icon = '' %}
+{% endif %}
+
+{% if pr.language == 'ruby' %}
+  {% assign logo_path = "/assets/img/logos/ruby_logo.svg" %}
+{% elsif pr.language == 'ruby_on_rails' %}
+  {% assign logo_path = "/assets/img/logos/ruby_on_rails_logo.svg" %}
+{% elsif pr.language == 'golang' %}
+  {% assign logo_path = "/assets/img/logos/go_logo_aqua.svg" %}
+{% elsif pr.language == 'rust' %}
+  {% assign logo_path = "/assets/img/logos/rust_logo_white.svg" %}
+{% elsif pr.language == 'node.js' %}
+  {% assign logo_path = "/assets/img/logos/node_js_white.svg" %}
+{% elsif pr.language == 'react' %}
+  {% assign logo_path = "/assets/img/logos/react_logo_aqua.svg" %}
+{% endif %}
+
+{% assign pr_number = pr.url | split: '/' %}
+
+<div class="pr {{ pr_status_class }}">
+  <!--<title>asd</title>-->
+  <!--<h4>-->
+  <div class="pr-header">
+    <a href="{{ pr.repo_home }}" target="_blank">
+      <img
+        src="{{ logo_path }}"
+        class="icon"
+        alt="ruby logo">
+      <span>{{ pr.repo_name }}</span>
+    </a>
+    <img
+      src="{{ merged_icon }}"
+      class="icon"
+      alt="{{pr.status}}">
+  </div>
+  <!--</h4>-->
+  <p>{{ pr.description }}</p>
+  <a href="{{ pr.url }}" target="_blank">
+    <img
+      src="/assets/img/link_external.svg"
+      alt="merged icon">
+    PR# {{ pr_number[6] }}
+  </a>
+</div>

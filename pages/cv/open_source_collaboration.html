@@ -1,0 +1,10 @@
+<!--<h1 id="open-source-collaboration">Open source collaboration</h1>-->
+<h3 id="open-source-collaboration">Open source collaboration</h3>
+
+<div class="open-source-collaboration">
+  <ul>
+    {% for pr in site.data.prs %}
+      {% include_relative pr.html pr=pr %}
+    {% endfor %}
+  </ul>
+</div>
