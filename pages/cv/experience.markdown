@@ -1,10 +1,12 @@
 <!-- <h1 id="experience">Experience</h1> -->
 
+<h3 class="cv-subtitle"><strong>Experience</strong></h3>
+
 <div class="nodes">
   <ul class="first-level">
     {% for experience in site.data.experiences %}
       <li>
-        <span>{{ experience.name }}</span>
+        <strong>{{ experience.name }}</strong>
         <small>{{ experience.role }}</small>
         <small>{{ experience.period }}</small>
         <small>{{ experience.place }}</small>

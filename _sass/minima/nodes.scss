@@ -1,3 +1,12 @@
+@keyframes my_circle {
+  from {
+    box-shadow: 0 0 0 0px $yellow;
+  }
+  to {
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+  }
+}
+
 .nodes {
   // & > ul {
   ul.first-level {
@@ -15,8 +24,8 @@
       }
     }
 
-    & > li:hover span {
-      color: $yellow;
+    & > li:hover strong {
+      color: $orange;
     }
 
     & > li:hover::before {

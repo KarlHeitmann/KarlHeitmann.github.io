@@ -25,15 +25,6 @@ $yellow: $brand-color-dark;
   box-sizing: inherit;
 }
 
-@keyframes my_circle {
-  from {
-    box-shadow: 0 0 0 0px $yellow;
-  }
-  to {
-    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
-  }
-}
-
 .project {
   border: 1px solid;
   border-radius: 6px;
