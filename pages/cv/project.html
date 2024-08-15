@@ -1,0 +1,12 @@
+<div class="project">
+  <h4>{{ project.title }}</h4>
+  <p>{{ project.description }}</p>
+
+  <a href="{{ project.code }}" target="_blank">Code</a> 
+  {% if project.demo %}
+    | <a href="{{ project.demo }}" target="_blank">Demo</a> 
+  {% endif %}
+  {% if project.youtube %}
+    | <a href="{{ project.youtube }}" target="_blank">YouTube</a> 
+  {% endif %}
+</div>

@@ -29,4 +29,4 @@ applications and agile methodologies.
 
 {% include_relative open_source_collaboration.html %}
 
-{% include_relative projects.markdown %}
+{% include_relative projects.html %}
