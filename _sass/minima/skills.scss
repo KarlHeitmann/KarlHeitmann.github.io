@@ -1,20 +1,44 @@
+@keyframes skill_color_change {
+  from {
+    background-color: $text-color;
+    color: $background-color;
+  }
+  to {
+    background-color: $background-color;
+    color: $text-color;
+  }
+}
+
+@keyframes skill_color_change_transform {
+  from {
+    background-color: $background-color;
+    color: $text-color;
+  }
+  to {
+    background-color: $text-color;
+    color: $background-color;
+  }
+}
+
 .skills {
   .skill {
     width: max-content;
-    // background-color: $brand-color;
-    // background-color: $brand-color-light;
-    // background-color: $background-color;
-
-    // background-color: $brand-color-dark;
-    // color: $text-color;
 
     background-color: $text-color;
-    // color: black;
     color: $background-color;
     padding: 0px 10px;
     margin: 2px 0px;
     display: inline-block;
     border-radius: 3px;
+
+    &:hover {
+      animation: skill_color_change 1.3s;
+      background-color: $background-color;
+      color: $text-color;
+    }
+    &:not(:hover) {
+      animation: skill_color_change_transform 1.3s;
+    }
   }
 }
 
