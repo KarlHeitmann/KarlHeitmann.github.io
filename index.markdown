@@ -11,15 +11,7 @@ layout: page
 
 I’m overhauling my website.
 
-Don't worry, my legacy web page contains much more fun stuff. As soon as I finish setting up my <a href="https://github.com/KarlHeitmann/karlheitmann_legacy" target="_blank">legacy personal web page</a> deployment, I'll link it here.
+Click <a href="https://karlheitmann.github.io/karlheitmann_legacy/" target="_blank">here</a> to visit my legacy website. I built that site from scratch using Jekyll and SASS.
 
-In the meantime, you can check out my new CSS style by clicking [this link to my CV]({% link pages/cv/index.markdown %}).
-
----
-
-Yes!
-
-I'm open to work!
-
-That's the reason why I'm reviewing my website: I'm lazy and I only do what is necessary to do.
+I am using <a href="https://github.com/jekyll/minima" target="_blank">minima</a> as a starting point for my current website. Up until now I've built [my CV]({% link pages/cv/index.markdown %}). I'm open to work.
 
