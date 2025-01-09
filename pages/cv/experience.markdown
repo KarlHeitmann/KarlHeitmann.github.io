@@ -5,12 +5,20 @@
 <div class="nodes">
   <ul class="first-level">
     {% for experience in site.data.experiences %}
-      <li>
+      <li
+        data-controller="experience"
+        data-action="click->experience#toggle"
+        style="cursor: pointer;"
+      >
         <strong>{{ experience.name }}</strong>
         <small>{{ experience.role }}</small>
         <small>{{ experience.period }}</small>
-        <small>{{ experience.place }}</small>
-        <ul class="second-level">
+        <small
+        >{{ experience.place }}</small>
+        <ul
+          hidden=""
+          data-experience-target="main"
+          class="second-level">
           {% for bullet_item in experience.bullet_list %}
             <li><small>{{ bullet_item }}</small></li>
           {% endfor %}
@@ -18,4 +26,15 @@
       </li>
     {% endfor %}
   </ul>
+
+  <script type="module">
+    window.Stimulus.register("experience", class extends window.Controller {
+      static targets = ["main"]
+      toggle() {
+        console.log("Toggled!")
+        this.mainTarget.hidden = !this.mainTarget.hidden
+        // debugger
+      }
+    })
+  </script>
 </div>
